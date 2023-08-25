@@ -70,8 +70,8 @@ function CaseStudies({ caseStudies }) {
         <p>
           Our cutting-edge technology delivers hyper-real 3D product
           visualizations, immersive interactive features, and seamless
-          integration with the web, making experiences that are accessible to anyone,
-          anywhere.
+          integration with the web, making experiences that are accessible to
+          anyone, anywhere.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -126,8 +126,8 @@ function Services() {
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          As long as those opportunities involve giving us money to re-purpose
-          old projects — we can come up with an endless number of those.
+          As long as you give us the chance to create new an beatiful
+          experiences we are game for anything.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -205,9 +205,8 @@ export default async function Home() {
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'Phobia', logo: logoPhobiaDark }}
       >
-        The team at Studio went above and beyond with our onboarding, even
-        finding a way to access the user’s microphone without triggering one of
-        those annoying permission dialogs.
+        The team at FutureSupply went above and beyond with our onboarding
+        experience, creating more engagement and interaction with our audiences.
       </Testimonial>
 
       <Services />
