@@ -64,13 +64,14 @@ function CaseStudies({ caseStudies }) {
   return (
     <>
       <SectionIntro
-        title="Harnessing technology for a brighter future"
+        title="Harnessing technology to Engage, inspire, and connect with your audience"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          We believe technology is the answer to the world’s greatest
-          challenges. It’s also the cause, so we find ourselves in bit of a
-          catch 22 situation.
+          Our cutting-edge technology delivers hyper-real 3D product
+          visualizations, immersive interactive features, and seamless
+          integration with the web, making experiences that are accessible to anyone,
+          anywhere.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -141,24 +142,29 @@ function Services() {
             </FadeIn>
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-            <ListItem title="Web development">
-              We specialise in crafting beautiful, high quality marketing pages.
-              The rest of the website will be a shell that uses lorem ipsum
-              everywhere.
+            <ListItem title="Advertising">
+              Cutting-edge advertising campaigns that leverage immersive
+              technologies to captivate audiences, deliver memorable brand
+              experiences, and drive customer engagement.
             </ListItem>
-            <ListItem title="Application development">
-              We have a team of skilled developers who are experts in the latest
-              app frameworks, like Angular 1 and Google Web Toolkit.
+            <ListItem title="Architecture">
+              Concept art and visual exploration: Developing the visual identity
+              and exploring different aesthetics.
             </ListItem>
-            <ListItem title="E-commerce">
-              We are at the forefront of modern e-commerce development. Which
-              mainly means adding your logo to the Shopify store template we’ve
-              used for the past six years.
+            <ListItem title="Entertainment">
+              Virtual reality (VR) and augmented reality (AR) experiences that
+              revolutionize gaming, storytelling, and immersive entertainment,
+              blurring the lines between the real and virtual worlds.
             </ListItem>
-            <ListItem title="Custom content management">
-              At Studio we understand the importance of having a robust and
-              customised CMS. That’s why we run all of our client projects out
-              of a single, enormous Joomla instance.
+            <ListItem title="Ecommerce">
+              Virtual shopping experiences that enable customers to visualize
+              and interact with products in realistic 3D, improving the online
+              shopping journey and increasing conversion rates.
+            </ListItem>
+            <ListItem title="Education">
+              Interactive virtual learning environments that enhance engagement
+              and provide immersive educational experiences for empployees and
+              students in professional as well as educational enviroments.
             </ListItem>
           </List>
         </div>
@@ -180,12 +186,13 @@ export default async function Home() {
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-            Award-winning development studio based in Denmark.
+            We create amazing immersive experience.
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            We are a development studio working at the intersection of design
-            and technology. It’s a really busy intersection though — a lot of
-            our staff have been involved in hit and runs.
+            Our expert team redefines possibilities with scalable digital
+            solutions. From architecture and education to entertainment,
+            advertising, and ecommerce, we cater to diverse industries.
+            Immersive virtual solutions, branded platforms, and more.
           </p>
         </FadeIn>
       </Container>
