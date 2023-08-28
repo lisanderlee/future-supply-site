@@ -73,14 +73,14 @@ function CaseStudies({ caseStudies }) {
                       Read case study
                     </Button>
                   </div>
-                  {caseStudy.testimonial && (
+                  {/* {caseStudy.testimonial && (
                     <Blockquote
                       author={caseStudy.testimonial.author}
                       className="mt-12"
                     >
                       {caseStudy.testimonial.content}
                     </Blockquote>
-                  )}
+                  )} */}
                 </div>
               </Border>
             </article>
