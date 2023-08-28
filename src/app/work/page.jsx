@@ -102,34 +102,34 @@ const clients = [
   ['North Adventures', logoNorthAdventures],
 ]
 
-function Clients() {
-  return (
-    <Container className="mt-24 sm:mt-32 lg:mt-40">
-      <FadeIn>
-        <h2 className="font-display text-2xl font-semibold text-neutral-950">
-          You’re in good company
-        </h2>
-      </FadeIn>
-      <FadeInStagger className="mt-10" faster>
-        <Border as={FadeIn} />
-        <ul
-          role="list"
-          className="grid grid-cols-2 gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-4"
-        >
-          {clients.map(([client, logo]) => (
-            <li key={client} className="group">
-              <FadeIn className="overflow-hidden">
-                <Border className="pt-12 group-[&:nth-child(-n+2)]:-mt-px sm:group-[&:nth-child(3)]:-mt-px lg:group-[&:nth-child(4)]:-mt-px">
-                  <Image src={logo} alt={client} unoptimized />
-                </Border>
-              </FadeIn>
-            </li>
-          ))}
-        </ul>
-      </FadeInStagger>
-    </Container>
-  )
-}
+// function Clients() {
+//   return (
+//     <Container className="mt-24 sm:mt-32 lg:mt-40">
+//       <FadeIn>
+//         <h2 className="font-display text-2xl font-semibold text-neutral-950">
+//           You’re in good company
+//         </h2>
+//       </FadeIn>
+//       <FadeInStagger className="mt-10" faster>
+//         <Border as={FadeIn} />
+//         <ul
+//           role="list"
+//           className="grid grid-cols-2 gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-4"
+//         >
+//           {clients.map(([client, logo]) => (
+//             <li key={client} className="group">
+//               <FadeIn className="overflow-hidden">
+//                 <Border className="pt-12 group-[&:nth-child(-n+2)]:-mt-px sm:group-[&:nth-child(3)]:-mt-px lg:group-[&:nth-child(4)]:-mt-px">
+//                   <Image src={logo} alt={client} unoptimized />
+//                 </Border>
+//               </FadeIn>
+//             </li>
+//           ))}
+//         </ul>
+//       </FadeInStagger>
+//     </Container>
+//   )
+// }
 
 export const metadata = {
   title: 'Our Work',
@@ -148,22 +148,21 @@ export default async function Work() {
       >
         <p>
           We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
+          best value to our clients. 
         </p>
       </PageIntro>
 
       <CaseStudies caseStudies={caseStudies} />
 
-      <Testimonial
+      {/* <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'Mail Smirk', logo: logoMailSmirk }}
       >
-        We approached <em>Studio</em> because we loved their past work. They
+        We approached <em>FutureSupply</em> because we loved their past work. They
         delivered something remarkably similar in record time.
-      </Testimonial>
+      </Testimonial> */}
 
-      <Clients />
+      {/* <Clients /> */}
 
       <ContactSection />
     </>
