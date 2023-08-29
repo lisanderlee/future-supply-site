@@ -18,3 +18,10 @@
   top: 0;
   left: 0;
 }
+
+
+#thecanvas {
+  position: absolute!important;
+  cursor: grab;
+
+  }

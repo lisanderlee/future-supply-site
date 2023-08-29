@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-
+import VideoPlayer from '@/components/VideoPlayer'
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
@@ -8,14 +8,13 @@ import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
-import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { loadCaseStudies } from '@/lib/mdx'
-import webGl from "@/images/stack/webgl-w.svg"
-import unreal from "@/images/stack/unreal-w.svg"
-import azure from "@/images/stack/azure-w.svg"
-import next from "@/images/stack/next-w.svg"
-
+import webGl from '@/images/stack/webgl-w.svg'
+import unreal from '@/images/stack/unreal-w.svg'
+import azure from '@/images/stack/azure-w.svg'
+import next from '@/images/stack/next-w.svg'
+import Head from '@/components/Model'
 
 const clients = [
   ['unreal', unreal],
@@ -24,7 +23,7 @@ const clients = [
   ['next', next],
 ]
 
-function Clients() {
+function Stack() {
   return (
     <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
       <Container>
@@ -37,10 +36,10 @@ function Clients() {
         <FadeInStagger faster>
           <ul
             role="list"
-            className="mt-16  flex justify-between grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4"
+            className="mt-16  flex grid-cols-2 justify-between gap-x-8 gap-y-10 lg:grid-cols-4"
           >
             {clients.map(([client, logo]) => (
-              <li  key={client}>
+              <li key={client}>
                 <FadeIn>
                   <Image src={logo} alt={client} unoptimized />
                 </FadeIn>
@@ -124,17 +123,17 @@ function Services() {
         </p>
       </SectionIntro>
       <Container className="mt-16">
-        <div className="lg:flex lg:items-center lg:justify-end">
-          <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
+        <div className="lg:flex lg:items-center lg: justify-between lg:justify-end">
+          <div className="flex justify-center lg:w-1/2 lg:  lg:justify-end lg:pr-12">
             <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
               <StylizedImage
                 src={imageLaptop}
                 sizes="(min-width: 1024px) 41rem, 31rem"
-                className="justify-center lg:justify-end"
+                className="justify-center ml-0 lg:ml-12 lg:justify-end"
               />
             </FadeIn>
           </div>
-          <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
+          <List className="mt-16 ml-0 lg:ml-20 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
             <ListItem title="Advertising">
               Cutting-edge advertising campaigns that leverage immersive
               technologies to captivate audiences, deliver memorable brand
@@ -176,7 +175,7 @@ export default async function Home() {
 
   return (
     <>
-      <Container className="mt-24 sm:mt-32 md:mt-56">
+      <Container className=" mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
             We create amazing immersive experience.
@@ -190,7 +189,7 @@ export default async function Home() {
         </FadeIn>
       </Container>
 
-      <Clients />
+      <Stack />
 
       <CaseStudies caseStudies={caseStudies} />
 
